@@ -8,5 +8,5 @@ LABEL Name="vamsi"\
 ENV    URL="google.com"
 ENV    project="vamsi"
 RUN    rm -rf  /var/www/html/*
-ADD    index.html  /var/www/html
+ADD    index.html  /var/www/html/index.html
 #you can change ownership of the file using --chown=user
