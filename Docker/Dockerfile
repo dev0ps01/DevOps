@@ -22,5 +22,9 @@ ARG      URL
 ENV      URL=${URL}
 #  we can pass valuse through command using --build-arg URL=google.com
 #  we can use it as variable
+ONBUILD  ENV  URL=example.com
+# if someone is trying to build on my image it will trigger an intruction
+#kill -l gives all the signals in os
+
 
 
