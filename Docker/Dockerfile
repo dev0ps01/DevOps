@@ -5,5 +5,5 @@ CMD   ["nginx", "-g", "daemon off;"]
 LABEL Name="vamsi"\
       Surname="Akkala"
 EXPOSE 4000
-ENV    URL="google.com"
-       Name="vamsi"
+ENV    URL=google.com
+       Name= vamsi
