@@ -8,5 +8,9 @@ LABEL Name="vamsi"\
 ENV    URL="google.com"
 ENV    project="vamsi"
 RUN    rm -rf  /var/www/html/*
-ADD    index.html  /var/www/html/index.html
+#ADD    index.html  /var/www/html/index.html
 #you can change ownership of the file using --chown=user
+ADD    html  /var/www/html
+# if you mention directory it will copy the files inside that directory to the declared path
+#  inside that if you have other directory it will copy that one also
+
