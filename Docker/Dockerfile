@@ -1,6 +1,7 @@
 FROM  ubuntu
 RUN   apt update
 RUN   apt install nginx -y
+# override the default command
 CMD   ["nginx", "-g", "daemon off;"]
 LABEL Name="vamsi"\
       Surname="Akkala"\
@@ -25,6 +26,6 @@ ENV      URL=${URL}
 ONBUILD  ENV  URL=example.com
 # if someone is trying to build on my image it will trigger an intruction
 #kill -l gives all the signals in os
-
+# we can use dockerfile name as different but when you are using in clu mention it with -f
 
 
