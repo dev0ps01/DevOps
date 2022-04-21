@@ -13,4 +13,14 @@ RUN    rm -rf  /var/www/html/*
 ADD    html  /var/www/html
 # if you mention directory it will copy the files inside that directory to the declared path
 #  inside that if you have other directory it will copy that one also
+ENTRYPOINT  ["ping", " -c", "2"]
+VOLUME      /myvol
+RUN      mkdir vamsi
+RUN      useradd sample
+USER     sample
+ARG      URL
+ENV      URL=${URL}
+#  we can pass valuse through command using --build-arg URL=google.com
+#  we can use it as variable
+
 
