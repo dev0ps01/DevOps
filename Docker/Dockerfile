@@ -6,4 +6,4 @@ LABEL Name="vamsi"\
       Surname="Akkala"
 EXPOSE 4000
 ENV    URL=google.com
-       Name= vamsi
+ENV    Name= vamsi
