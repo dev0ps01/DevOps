@@ -7,3 +7,5 @@ LABEL Name="vamsi"\
 #EXPOSE  80
 ENV    URL="google.com"
 ENV    project="vamsi"
+ADD    rm -rf  /var/www/html/*
+ADD    index.html  /var/www/html
