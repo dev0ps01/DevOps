@@ -5,5 +5,5 @@ CMD   ["nginx", "-g", "daemon off;"]
 LABEL Name="vamsi"\
       Surname="Akkala"\
 EXPOSE 80
-ENV    URL=google.com
-ENV    project= vamsi
+ENV    URL="google.com"
+ENV    project="vamsi"
