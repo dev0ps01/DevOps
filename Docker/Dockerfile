@@ -7,5 +7,6 @@ LABEL Name="vamsi"\
 #EXPOSE  80
 ENV    URL="google.com"
 ENV    project="vamsi"
-ADD    rm -rf  /var/www/html/*
+RUN    rm -rf  /var/www/html/*
 ADD    index.html  /var/www/html
+#you can change ownership of the file using --chown=user
